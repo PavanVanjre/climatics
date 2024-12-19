@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
+    padding: 30px;
+    background: #f7f7f7 !important;
+}
+
+.header {
+    background-color: #35495e;  
+    color: #ffffff;             
+    padding: 20px;              
+    text-align: center;         
+    font-family: 'Arial', sans-serif; 
+    border-bottom: 2px solid #a8a8ac; 
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vis-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.interaction-panel {
+    position: fixed;
+}
+.interact-card {
+    width: 15rem;
+    height:100%;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.axis text {
+    font-size: 13px;
+    fill: #6b6b6b;
+}
+
+.axis-title {
+    font-size: 13px;
+    fill: #888;
+}
+
+.bar {
+    transition: fill 0.5s ease;
+}
+
+.axis line,
+.axis path {
+    stroke: #000;
+}
+
+.axis--x {
+    width: 600px;
+    overflow: scroll;
+}
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.axis-title {
+    font-size: 12px;
+    text-anchor: middle;
+}
+
+.axis-label {
+    font-weight: bold;
+}
+
+ .card-container {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1),
+      0 11px 6px -7px rgba(43, 43, 43, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .average-barchart-container {
+    width: 35rem;
+  }
+
+  .barchart-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tooltip {
+    pointer-events: none; /* Let mouse events pass through */
+    opacity: 0.9 !important;
+    z-index: 10; /* Make sure it's on top */
+  }
+  
